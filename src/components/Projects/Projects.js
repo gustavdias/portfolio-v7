@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   heroContent: {
-    backgroundColor: '#eaded0',
+    // backgroundColor: "#eaded0",
+    color: "#eaded0",
     padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
     maxWidth: 1300,
-    background: '#5f5b60'
+    background: "#5f5b60",
   },
   card: {
     // maxWidth: 345,
@@ -52,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     // background: '#dbb700'
     textAlign: "justify",
   },
-
 
   cardYellow: {
     background: "#dbb700",
@@ -78,10 +78,34 @@ export default function Album() {
   return (
     <React.Fragment>
       {/* <Box component="div" style={{ background: "#5f5b60", height: "100vh" }} */}
-      <main style={{ background: "#5f5b60"}}>
-       
+      <main style={{ background: "#5f5b60" }}>
         <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
+          <Container
+            maxWidth="sm"
+            component="main"
+            className={classes.heroContent}
+          >
+            <Typography
+              component="h2"
+              variant="h2"
+              align="center"
+              color="textPrimary"
+              gutterBottom
+            >
+              Portfolio
+            </Typography>
+            {/* <Typography
+          variant="h5"
+          align="center"
+          color="textSecondary"
+          component="h5"
+        >
+          A Full Stack Developer with several skills to contribute to your
+          company and team. I also bring to the table my experience in SEO and
+          Conversion Rate Optimization.{" "}
+        </Typography> */}
+            {/* End hero unit */}
+          </Container>
 
           <Grid container spacing={4}>
             {/* {cards.map((card) => ( */}
@@ -95,8 +119,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://dev-burger-builder-939a7.web.app/"
                 >
-
-
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
@@ -106,16 +128,21 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      React {bull} Node.js {bull} Express {bull} Firebase Realtime Database
+                      Burger Builder - Menu
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Burger Builder - Menu
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Node.js {bull} Express {bull} Firebase Realtime
+                    Database
                   </Typography>
                   <Typography>
-                  A <strong>React</strong> Burger Builder App with <strong>database</strong> and <strong>deployment</strong> on <strong>Firebase</strong>. You can build your own burger, with many pieces of salad, bacon, cheese, and meat, in <strong>any screen size</strong>.
+                    A <strong>React</strong> Burger Builder App with{" "}
+                    <strong>database</strong> and <strong>deployment</strong> on{" "}
+                    <strong>Firebase</strong>. You can build your own burger,
+                    with many pieces of salad, bacon, cheese, and meat, in{" "}
+                    <strong>any screen size</strong>.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -154,8 +181,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://extracker.netlify.app/"
                 >
-       
-
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardBlue}`}
                   >
@@ -165,29 +190,27 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      MongoDB {bull} Express {bull} React {bull} Node.js
+                      eT-exerciseTracker App
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    eT-exerciseTracker App
+                  <Typography gutterBottom variant="h6" component="h2">
+                    MongoDB {bull} Express {bull} React {bull} Node.js
                   </Typography>
-                  <Typography >
-                    
-                      <strong>MERN</strong> Stack - A <strong>React</strong>{" "}
-                      Exercise Tracker App with <strong>MongoDB</strong>,{" "}
-                      <strong>Express</strong>, and <strong>Node.js</strong> on
-                      the backend.
-                      <br />
-                      Extra dependencies: <strong>mongoose</strong>,{" "}
-                      <strong>axios</strong>, <strong>react-router-dom</strong>,{" "}
-                      <strong>bootstrap</strong>,{" "}
-                      <strong>react-datepicker</strong>, <strong>cors</strong>.
-                    
-                      <strong>eT</strong> - your personal exercise tracker,{" "}
-                      <strong>so good</strong>,{" "}
-                      <strong>it is out of this planet</strong>! Give it a try!
+                  <Typography>
+                    <strong>MERN</strong> Stack - A <strong>React</strong>{" "}
+                    Exercise Tracker App with <strong>MongoDB</strong>,{" "}
+                    <strong>Express</strong>, and <strong>Node.js</strong> on
+                    the backend.
+                    <br />
+                    Extra dependencies: <strong>mongoose</strong>,{" "}
+                    <strong>axios</strong>, <strong>react-router-dom</strong>,{" "}
+                    <strong>bootstrap</strong>,{" "}
+                    <strong>react-datepicker</strong>, <strong>cors</strong>.
+                    <strong>eT</strong> - your personal exercise tracker,{" "}
+                    <strong>so good</strong>,{" "}
+                    <strong>it is out of this planet</strong>! Give it a try!
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -226,8 +249,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://react-justdoit.netlify.app"
                 >
-
-
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardBlack}`}
                   >
@@ -237,13 +258,13 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      MongoDB {bull} Express {bull} React {bull} Node.js
+                      MERN Todo List
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    React Todo List JSONPlaceholder
+                  <Typography gutterBottom variant="h6" component="h2">
+                    MongoDB {bull} Express {bull} React {bull} Node.js
                   </Typography>
                   <Typography>
                     A React Todo List with JSONPlaceholder Fake online REST that
@@ -278,7 +299,6 @@ export default function Album() {
               </Card>
             </Grid>
 
-
             {/* Card 4 Blue */}
             <Grid item key={4} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
@@ -287,7 +307,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://ric-rac-roe.netlify.app"
                 >
-  
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardBlue}`}
                   >
@@ -297,18 +316,15 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      React
+                      Tic-tac-toe game with time travel
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    React tic-tac-toe game with time travel
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React
                   </Typography>
-                  <Typography>
-
-                    
-                  </Typography>
+                  <Typography>The title says it all.</Typography>
                 </CardContent>
                 <CardActions>
                   <Button
@@ -338,7 +354,6 @@ export default function Album() {
               </Card>
             </Grid>
 
-
             {/* Card 5 White*/}
             <Grid item key={5} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
@@ -347,8 +362,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://github.com/gustavdias/post-reserve"
                 >
-
-
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardWhite}`}
                   >
@@ -358,16 +371,25 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      JavaScript {bull} Node.js {bull} Express {bull} MongoDB {bull} Passport.js
+                      Post & Reserve App
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Post & Reserve App
+                  <Typography gutterBottom variant="h6" component="h2">
+                    JavaScript {bull} Node.js {bull} Express {bull} MongoDB{" "}
+                    {bull} Passport.js
                   </Typography>
                   <Typography>
-                  <strong>Sign Up</strong>, <strong>Login</strong>, <strong>Create</strong> and <strong>Delete</strong> your own <strong>Posts</strong> and <strong>Comments</strong>. A Project using <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Node.js</strong>, <strong>Express</strong>, mongoose with <strong>MongoDB</strong>, <strong>authentication</strong>, and authorization with <strong>Passport.js</strong>.
+                    <strong>Sign Up</strong>, <strong>Login</strong>,{" "}
+                    <strong>Create</strong> and <strong>Delete</strong> your own{" "}
+                    <strong>Posts</strong> and <strong>Comments</strong>. A
+                    Project using <strong>JavaScript</strong>,{" "}
+                    <strong>HTML</strong>, <strong>CSS</strong>,{" "}
+                    <strong>Node.js</strong>, <strong>Express</strong>, mongoose
+                    with <strong>MongoDB</strong>,{" "}
+                    <strong>authentication</strong>, and authorization with{" "}
+                    <strong>Passport.js</strong>.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -406,8 +428,6 @@ export default function Album() {
                   rel="noopener noreferrer"
                   href="https://vanillajs-todo-list.netlify.app"
                 >
-
-
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
@@ -417,16 +437,16 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      JavaScript {bull} HTML {bull} CSS 
+                      Vanilla JS Todo List
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Vanilla JS Todo List
+                  <Typography gutterBottom variant="h6" component="h2">
+                    JavaScript {bull} HTML {bull} CSS
                   </Typography>
                   <Typography>
-                  A charming JavaScript Todo List, design with CSS.
+                    A charming JavaScript Todo List, design with CSS.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -456,8 +476,6 @@ export default function Album() {
                 </CardActions>
               </Card>
             </Grid>
-
-  
           </Grid>
         </Container>
       </main>

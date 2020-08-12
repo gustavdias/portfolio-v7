@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import { Grid, CardActionArea } from "@material-ui/core";
+import { Grid, CardActionArea, Zoom } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
@@ -11,6 +11,7 @@ import Container from "@material-ui/core/Container";
 import CodeIcon from "@material-ui/icons/Code";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import MainCard from "../3dCard/3dCard";
+import WordTransition from "../WordTransition/WordTransition";
 
 //card buttons style
 
@@ -71,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export default function Album() {
+export default function MainProjects() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -81,18 +82,22 @@ export default function Album() {
       <main style={{ background: "#5f5b60" }}>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
-
+<Zoom in>
           <Grid container spacing={4}>
             {/* {cards.map((card) => ( */}
             {/* Place your cards */}
 
-            {/* Card 1 Yellow */}
+            <Grid item key={3} xs={12} sm={6} md={6}>
+              <WordTransition />
+            </Grid>
+
+            {/* Card 0 AI Yellow */}
             <Grid item key={0} xs={12} sm={6} md={6}>
-              <Card className={classes.card}>
+              <Card className={classes.cardWhite}>
                 <CardActionArea
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://dev-burger-builder-939a7.web.app/"
+                  href="https://intelligent-news.netlify.app/"
                 >
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardYellow}`}
@@ -103,32 +108,32 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      React {bull} Node.js {bull} Express {bull} Firebase
-                      Realtime Database
+                      Intelligent News App - The News provided and read by AI
                     </Typography>
-                    <MainCard card="card1"/>
+                    <MainCard card="card1" divided="1.35" />
                   </CardContent>
                 </CardActionArea>
-                <CardContent className={`${classes.cardContent} ${classes.cardYellow}`}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Burger Builder - Menu
+                <CardContent
+                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                >
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Alan API {bull} News API {bull} Material-UI {bull}{" "}
+                    React-Spring {bull} Material-UI
                   </Typography>
                   <Typography>
-                    A <strong>React</strong> Burger Builder App with{" "}
-                    <strong>database</strong> and <strong>deployment</strong> on{" "}
-                    <strong>Firebase</strong>. You can build your own burger,
-                    with many pieces of salad, bacon, cheese, and meat, in{" "}
-                    <strong>any screen size</strong>.
+                  Let the AI do all the work. It will find and read for you the latest news, by categories, terms, and sources..
                   </Typography>
                 </CardContent>
-                <CardActions className={`${classes.cardContent} ${classes.cardYellow}`}>
+                <CardActions
+                  className={`${classes.cardContent} ${classes.cardBlack}`}
+                >
                   <Button
                     variant="contained"
                     color="primary"
                     className={classes.button}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/dev-burger-builder"
+                    href="https://github.com/gustavdias/intelligent-news"
                     startIcon={<CodeIcon />}
                   >
                     CODE
@@ -140,7 +145,74 @@ export default function Album() {
                     className={classes.button}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://dev-burger-builder-939a7.web.app/"
+                    href="https://intelligent-news.netlify.app/"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    DEMO
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            {/* Card 1 chat */}
+            <Grid item key={0} xs={12} sm={6} md={6}>
+              <Card className={classes.card}>
+                <CardActionArea
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://rchat-app.netlify.app/"
+                >
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardBlue}`}
+                  >
+                    <Typography
+                      color="inherit"
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      rChat App - PWA Realtime Chat
+                    </Typography>
+                    <MainCard card="card1" divided="4" />
+                  </CardContent>
+                </CardActionArea>
+                <CardContent
+                  className={`${classes.cardContent} ${classes.cardBlue}`}
+                >
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Node.js {bull} Express {bull} Socket.IO {bull}{" "}
+                    React-Spring {bull} Material-UI
+                  </Typography>
+                  <Typography>
+                    A <strong>React</strong> Burger Builder App with{" "}
+                    <strong>database</strong> and <strong>deployment</strong> on{" "}
+                    <strong>Firebase</strong>. You can build your own burger,
+                    with many pieces of salad, bacon, cheese, and meat, in{" "}
+                    <strong>any screen size</strong>.
+                  </Typography>
+                </CardContent>
+                <CardActions
+                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/gustavdias/rchat"
+                    startIcon={<CodeIcon />}
+                  >
+                    CODE
+                  </Button>
+
+                  <Button
+                    color="secondary"
+                    variant="contained"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://rchat-app.netlify.app/"
                     startIcon={<VisibilityIcon />}
                   >
                     DEMO
@@ -155,10 +227,10 @@ export default function Album() {
                 <CardActionArea
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://extracker.netlify.app/"
+                  href="https://cdice.netlify.app/"
                 >
                   <CardContent
-                    className={`${classes.cardContent} ${classes.cardBlue}`}
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
                     <Typography
                       color="inherit"
@@ -166,18 +238,17 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      MongoDB {bull} Express {bull} React {bull} Node.js
+                      cDice - A customizable dice
                     </Typography>
-                    <MainCard card="card2"/>
-
+                    <MainCard card="card2" divided="1.35" />
                   </CardContent>
                 </CardActionArea>
 
-
-
-                <CardContent className={`${classes.cardContent} ${classes.cardBlue}`}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    eT-exerciseTracker App
+                <CardContent
+                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                >
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} React-Spring {bull} PWA
                   </Typography>
                   <Typography>
                     <strong>MERN</strong> Stack - A <strong>React</strong>{" "}
@@ -189,19 +260,22 @@ export default function Album() {
                     <strong>axios</strong>, <strong>react-router-dom</strong>,{" "}
                     <strong>bootstrap</strong>,{" "}
                     <strong>react-datepicker</strong>, <strong>cors</strong>.
-                    <strong>eT</strong> - your personal exercise tracker,{" "}
-                    <strong>so good</strong>,{" "}
-                    <strong>it is out of this planet</strong>! Give it a try!
+                    Dice is a Progressive Web App (PWA) built with React.js. A
+                    customizable dice where you can pick how many sides it has
+                    and write down words or numbers on each front. You can
+                    install it on your smartphone or computer.
                   </Typography>
                 </CardContent>
-                <CardActions className={`${classes.cardContent} ${classes.cardBlue}`}>
+                <CardActions
+                  className={`${classes.cardContent} ${classes.cardBlue}`}
+                >
                   <Button
                     variant="contained"
                     color="primary"
                     className={classes.button}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/et-frontend"
+                    href="https://github.com/gustavdias/cdice-pwa"
                     startIcon={<CodeIcon />}
                   >
                     CODE
@@ -213,7 +287,7 @@ export default function Album() {
                     className={classes.button}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://extracker.netlify.app/"
+                    href="https://cdice.netlify.app/"
                     startIcon={<VisibilityIcon />}
                   >
                     DEMO
@@ -221,8 +295,11 @@ export default function Album() {
                 </CardActions>
               </Card>
             </Grid>
+          
           </Grid>
+          </Zoom>
         </Container>
+        
       </main>
     </React.Fragment>
   );

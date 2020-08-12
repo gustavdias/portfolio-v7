@@ -1,34 +1,3 @@
-/* html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-} */
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
-    roboto, noto, segoe ui, arial, sans-serif;
-  background: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-
-/* #root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #f0f0f0;
-} */
-
 .card1 {
   height: 20vmax;
   width: 35vmax;
@@ -42,14 +11,13 @@ body {
   will-change: transform;
 }
 
-
 .card2 {
   height: 20vmax;
   width: 35vmax;
   background: #36393f;
   margin: 0 auto;
   border-radius: 10px;
-  background-image: url(https://2.bp.blogspot.com/-5Q5kyAQIGQg/UHnKaTLhhiI/AAAAAAAAIUA/qR25bIKQj4A/s1600/IMG_4771.JPG);
+  background-image: url(https://2bp.blogspot.com/-5q5kyaqigqg/UHnKaTLhhiI/AAAAAAAAIUA/qR25bIKQj4A/s1600/IMG_4771.JPG);
   background-size: cover;
   background-position: center center;
   transition: box-shadow 0.5s;
