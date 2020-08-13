@@ -3,7 +3,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -155,8 +155,7 @@ const Contact = () => {
             type="submit"
          
             value="Send"
-            // component={Link}
-            // to="/"
+b
             className={classes.button}
             fullWidth={true}
             variant="outlined"
