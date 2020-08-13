@@ -4,7 +4,7 @@
   background: #36393f;
   margin: 0 auto;
   border-radius: 10px;
-  background-image: url(https://searchengineland.com/figz/wp-content/seloads/2015/01/text-messaging-chat-phones-ss-1920.jpg);
+  background-image: url(../../assets/images/Intelligent\ News.png);
   background-size: cover;
   background-position: center center;
   transition: box-shadow 0.5s;
@@ -17,7 +17,20 @@
   background: #36393f;
   margin: 0 auto;
   border-radius: 10px;
-  background-image: url(https://2bp.blogspot.com/-5q5kyaqigqg/UHnKaTLhhiI/AAAAAAAAIUA/qR25bIKQj4A/s1600/IMG_4771.JPG);
+  background-image: url(../../assets/images/rChat.png);
+  background-size: cover;
+  background-position: center center;
+  transition: box-shadow 0.5s;
+  will-change: transform;
+}
+
+.card3 {
+  height: 20vmax;
+  width: 35vmax;
+  background: #36393f;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-image: url(../../assets/images/rChat.png);
   background-size: cover;
   background-position: center center;
   transition: box-shadow 0.5s;

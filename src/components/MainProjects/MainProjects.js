@@ -173,7 +173,7 @@ export default function MainProjects() {
                     >
                       rChat App - PWA Realtime Chat
                     </Typography>
-                    <MainCard card="card1" divided="4" />
+                    <MainCard card="card2" divided="4" />
                   </CardContent>
                 </CardActionArea>
                 <CardContent
@@ -192,7 +192,7 @@ export default function MainProjects() {
                   </Typography>
                 </CardContent>
                 <CardActions
-                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                  className={`${classes.cardContent} ${classes.cardBlack}`}
                 >
                   <Button
                     variant="contained"
@@ -222,7 +222,7 @@ export default function MainProjects() {
             </Grid>
 
             {/* Card 2 Blue */}
-            <Grid item key={2} xs={12} sm={6} md={6}>
+            {/* <Grid item key={2} xs={12} sm={6} md={6}>
               <Card className={classes.card}>
                 <CardActionArea
                   target="_blank"
@@ -240,7 +240,7 @@ export default function MainProjects() {
                     >
                       cDice - A customizable dice
                     </Typography>
-                    <MainCard card="card2" divided="1.35" />
+                    <MainCard card="card3" divided="1.35" />
                   </CardContent>
                 </CardActionArea>
 
@@ -267,7 +267,7 @@ export default function MainProjects() {
                   </Typography>
                 </CardContent>
                 <CardActions
-                  className={`${classes.cardContent} ${classes.cardBlue}`}
+                  className={`${classes.cardContent} ${classes.cardBlack}`}
                 >
                   <Button
                     variant="contained"
@@ -294,7 +294,7 @@ export default function MainProjects() {
                   </Button>
                 </CardActions>
               </Card>
-            </Grid>
+            </Grid> */}
           
           </Grid>
           </Zoom>
