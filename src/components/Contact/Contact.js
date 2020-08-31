@@ -119,7 +119,7 @@ const Contact = () => {
           ></InputField>
           <br />
           <InputField
-            fullWidth={true}
+            fullWidth
             type="text"
             name="company"
             label="Company"
@@ -128,6 +128,7 @@ const Contact = () => {
             margin="dense"
             size="medium"
           ></InputField>
+
           <InputField
             fullWidth={true}
             type="text"
@@ -153,12 +154,12 @@ const Contact = () => {
           <br />
           <Button
             type="submit"
-         
             value="Send"
-b
+            b
             className={classes.button}
             fullWidth={true}
             variant="outlined"
+            // onClick={}
             endIcon={<SendIcon />}
           >
             Contact Me

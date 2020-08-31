@@ -68,6 +68,9 @@ const useStyles = makeStyles((theme) => ({
   cardWhite: {
     background: "#eaded0",
   },
+  centerClass : {
+    margin: "0 auto",
+  }
 }));
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -87,72 +90,10 @@ export default function MainProjects() {
             {/* {cards.map((card) => ( */}
             {/* Place your cards */}
 
-            <Grid item key={3} xs={12} sm={6} md={6}>
-              <WordTransition />
-            </Grid>
+            <Grid style={{textAlign: "center"}}  item key={0} xs={12} sm={12} md={12}>
 
-            {/* Card 0 AI Yellow */}
-            <Grid item key={0} xs={12} sm={6} md={6}>
-              <Card className={classes.cardWhite}>
-                <CardActionArea
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://intelligent-news.netlify.app/"
-                >
-                  <CardContent
-                    className={`${classes.cardContent} ${classes.cardYellow}`}
-                  >
-                    <Typography
-                      color="inherit"
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                    >
-                      Intelligent News App - The News provided and read by AI
-                    </Typography>
-                    <MainCard card="card1" divided="1.35" />
-                  </CardContent>
-                </CardActionArea>
-                <CardContent
-                  className={`${classes.cardContent} ${classes.cardYellow}`}
-                >
-                  <Typography gutterBottom variant="h6" component="h2">
-                    React {bull} Alan API {bull} News API {bull} Material-UI {bull}{" "}
-                    React-Spring {bull} Material-UI
-                  </Typography>
-                  <Typography>
-                  Let the AI do all the work. It will find and read for you the latest news, by categories, terms, and sources..
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  className={`${classes.cardContent} ${classes.cardBlack}`}
-                >
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.button}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/intelligent-news"
-                    startIcon={<CodeIcon />}
-                  >
-                    CODE
-                  </Button>
-
-                  <Button
-                    color="secondary"
-                    variant="contained"
-                    className={classes.button}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://intelligent-news.netlify.app/"
-                    startIcon={<VisibilityIcon />}
-                  >
-                    DEMO
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
+              <WordTransition className={classes.centerClass}/>
+              </Grid>
 
             {/* Card 1 chat */}
             <Grid item key={0} xs={12} sm={6} md={6}>
@@ -220,6 +161,135 @@ export default function MainProjects() {
                 </CardActions>
               </Card>
             </Grid>
+
+
+
+            {/* Card 2 AI Yellow */}
+            <Grid item key={0} xs={12} sm={6} md={6}>
+              <Card className={classes.cardWhite}>
+                <CardActionArea
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://intelligent-news.netlify.app/"
+                >
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
+                  >
+                    <Typography
+                      color="inherit"
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      Intelligent News App - The News provided and read by AI
+                    </Typography>
+                    <MainCard card="card1" divided="1.35" />
+                  </CardContent>
+                </CardActionArea>
+                <CardContent
+                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                >
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Alan API {bull} News API {bull} Material-UI {bull}{" "}
+                    React-Spring {bull} Material-UI
+                  </Typography>
+                  <Typography>
+                  Let the AI do all the work. It will find and read for you the latest news, by categories, terms, and sources..
+                  </Typography>
+                </CardContent>
+                <CardActions
+                  className={`${classes.cardContent} ${classes.cardBlack}`}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/gustavdias/ai-news"
+                    startIcon={<CodeIcon />}
+                  >
+                    CODE
+                  </Button>
+
+                  <Button
+                    color="secondary"
+                    variant="contained"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://intelligent-news.netlify.app/"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    DEMO
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+{/* Card 3 ecommerce */}
+<Grid item key={0} xs={12} sm={6} md={6}>
+              <Card className={classes.card}>
+                <CardActionArea
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://amazonias.herokuapp.com/"
+                >
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
+                  >
+                    <Typography
+                      color="inherit"
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      Amazonas App - eCommerce Store
+                    </Typography>
+                    <MainCard card="card3" divided="4" />
+                  </CardContent>
+                </CardActionArea>
+                <CardContent
+                  className={`${classes.cardContent} ${classes.cardYellow}`}
+                >
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Redux {bull} Node.js {bull} Express {bull} MongoDB {bull}{" "}
+                    React-Spring {bull} Material-UI
+                  </Typography>
+                  <Typography>
+                  Fully featured Amazon-like eCommerce MERN (+ Redux) stack app - (MongoDB, Express, React, Node, and Redux).  User authentication and authorization for customers and administrators. An admin side to manage products and orders. Paypal and card payment integration. All that is needed for a modern eCommerce business to be successful.
+                  </Typography>
+                </CardContent>
+                <CardActions
+                  className={`${classes.cardContent} ${classes.cardBlack}`}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/gustavdias/amazonias"
+                    startIcon={<CodeIcon />}
+                  >
+                    CODE
+                  </Button>
+
+                  <Button
+                    color="secondary"
+                    variant="contained"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://amazonias.herokuapp.com/"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    DEMO
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
 
             {/* Card 2 Blue */}
             {/* <Grid item key={2} xs={12} sm={6} md={6}>
