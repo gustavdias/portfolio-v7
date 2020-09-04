@@ -137,7 +137,44 @@ export default function NavDrawer(props) {
       </List>
       <Divider/>
 
-     
+      <List className={classes.listItem}>
+        {["HOME"].map((text, index) => (
+          <ListItem
+            button
+            key={text}
+            component={Link}
+            to="/"
+            variant="outlined"
+            color="secondary"
+          >
+            <ListItemIcon className={classes.button}>
+              {index % 2 === 0 ? <Home /> : <ContactMail />}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+            {/* <ListItemPath /> */}
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+
+      <List className={classes.listItem}>
+        {["CONTACT"].map((text, index) => (
+          <ListItem
+            button
+            key={text}
+            component={Link}
+            to="/contact"
+            variant="outlined"
+            color="secondary"
+          >
+            <ListItemIcon className={classes.button}>
+              <ContactMail />
+            </ListItemIcon>
+            <ListItemText primary={text} />
+            {/* <ListItemPath /> */}
+          </ListItem>
+        ))}
+      </List>
 
 
 

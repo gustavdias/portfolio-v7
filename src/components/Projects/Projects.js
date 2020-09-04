@@ -14,6 +14,9 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 //card buttons style
 
 const useStyles = makeStyles((theme) => ({
+  yWord: {
+color: '#dbb700',
+  },
   bullet: {
     display: "inline-block",
     margin: "0 4px",
@@ -92,7 +95,16 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              Portfolio
+              Portfolio 
+            </Typography>
+            <Typography
+              component="h2"
+              variant="h3"
+              align="center"
+              gutterBottom
+              className={classes.yWord}
+            >
+<span>+ </span> more projects <span>+</span>
             </Typography>
             {/* <Typography
           variant="h5"

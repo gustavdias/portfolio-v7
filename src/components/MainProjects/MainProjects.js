@@ -12,10 +12,18 @@ import CodeIcon from "@material-ui/icons/Code";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import MainCard from "../3dCard/3dCard";
 import WordTransition from "../WordTransition/WordTransition";
+import Typed from "react-typed";
+
 
 //card buttons style
 
 const useStyles = makeStyles((theme) => ({
+
+  portBox:{
+alignSelf: "center",
+color: "#0f0a10",
+// fontWeight: "bold"
+  },
   bullet: {
     display: "inline-block",
     margin: "0 4px",
@@ -68,9 +76,9 @@ const useStyles = makeStyles((theme) => ({
   cardWhite: {
     background: "#eaded0",
   },
-  centerClass : {
+  centerClass: {
     margin: "0 auto",
-  }
+  },
 }));
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -85,214 +93,249 @@ export default function MainProjects() {
       <main style={{ background: "#5f5b60" }}>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
-<Zoom in>
-          <Grid container spacing={4}>
-            {/* {cards.map((card) => ( */}
-            {/* Place your cards */}
+          <Zoom in>
+            <Grid container spacing={4}>
+              {/* {cards.map((card) => ( */}
+              {/* Place your cards */}
 
-            <Grid style={{textAlign: "center"}}  item key={0} xs={12} sm={12} md={12}>
+              <Grid
+                style={{ textAlign: "center" }}
+                item
+                key={0}
+                xs={12}
+                sm={6}
+                md={6}
+              >
+                <WordTransition className={classes.centerClass} />
+              </Grid>
+              <Grid
+                // style={{ textAlign: "left" }}
+                className={classes.portBox}
 
-              <WordTransition className={classes.centerClass}/>
+                item
+                key={0}
+                xs={12}
+                sm={6}
+                md={6}
+              >
+                <Typography
+                // className={classes.portfolio}
+                  gutterBottom
+                  variant="h3"
+                  component="h2"
+                  color="textSecondary"
+                >
+                   <Typed
+                strings={["check my PORTFOLIO main projects..."]}
+                startDelay={10000}
+                showCursor={false}
+                typeSpeed={80}
+              />
+
+                </Typography>
               </Grid>
 
-            {/* Card 1 chat */}
-            <Grid item key={0} xs={12} sm={6} md={6}>
-              <Card className={classes.card}>
-                <CardActionArea
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://rchat-app.netlify.app/"
-                >
-                  <CardContent
-                    className={`${classes.cardContent} ${classes.cardBlue}`}
-                  >
-                    <Typography
-                      color="inherit"
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                    >
-                      rChat App - PWA Realtime Chat
-                    </Typography>
-                    <MainCard card="card2" divided="4" />
-                  </CardContent>
-                </CardActionArea>
-                <CardContent
-                  className={`${classes.cardContent} ${classes.cardBlue}`}
-                >
-                  <Typography gutterBottom variant="h6" component="h2">
-                    React {bull} Node.js {bull} Express {bull} Socket.IO {bull}{" "}
-                    React-Spring {bull} Material-UI
-                  </Typography>
-                  <Typography>
-                    A <strong>React</strong> Burger Builder App with{" "}
-                    <strong>database</strong> and <strong>deployment</strong> on{" "}
-                    <strong>Firebase</strong>. You can build your own burger,
-                    with many pieces of salad, bacon, cheese, and meat, in{" "}
-                    <strong>any screen size</strong>.
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  className={`${classes.cardContent} ${classes.cardBlack}`}
-                >
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.button}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/rchat"
-                    startIcon={<CodeIcon />}
-                  >
-                    CODE
-                  </Button>
-
-                  <Button
-                    color="secondary"
-                    variant="contained"
-                    className={classes.button}
+              {/* Card 1 chat */}
+              <Grid item key={0} xs={12} sm={6} md={6}>
+                <Card className={classes.card}>
+                  <CardActionArea
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://rchat-app.netlify.app/"
-                    startIcon={<VisibilityIcon />}
                   >
-                    DEMO
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-
-
-            {/* Card 2 AI Yellow */}
-            <Grid item key={0} xs={12} sm={6} md={6}>
-              <Card className={classes.cardWhite}>
-                <CardActionArea
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://intelligent-news.netlify.app/"
-                >
-                  <CardContent
-                    className={`${classes.cardContent} ${classes.cardYellow}`}
-                  >
-                    <Typography
-                      color="inherit"
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
+                    <CardContent
+                      className={`${classes.cardContent} ${classes.cardBlue}`}
                     >
-                      Intelligent News App - The News provided and read by AI
-                    </Typography>
-                    <MainCard card="card1" divided="1.35" />
-                  </CardContent>
-                </CardActionArea>
-                <CardContent
-                  className={`${classes.cardContent} ${classes.cardYellow}`}
-                >
-                  <Typography gutterBottom variant="h6" component="h2">
-                    React {bull} Alan API {bull} News API {bull} Material-UI {bull}{" "}
-                    React-Spring {bull} Material-UI
-                  </Typography>
-                  <Typography>
-                  Let the AI do all the work. It will find and read for you the latest news, by categories, terms, and sources..
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  className={`${classes.cardContent} ${classes.cardBlack}`}
-                >
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.button}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/ai-news"
-                    startIcon={<CodeIcon />}
+                      <Typography
+                        color="inherit"
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                      >
+                        rChat App - PWA Realtime Chat
+                      </Typography>
+                      <MainCard card="card2" divided="4" />
+                    </CardContent>
+                  </CardActionArea>
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardBlue}`}
                   >
-                    CODE
-                  </Button>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      React {bull} Node.js {bull} Express {bull} Socket.IO{" "}
+                      {bull} React-Spring {bull} Material-UI
+                    </Typography>
+                    <Typography>
+                      A <strong>React</strong> Burger Builder App with{" "}
+                      <strong>database</strong> and <strong>deployment</strong>{" "}
+                      on <strong>Firebase</strong>. You can build your own
+                      burger, with many pieces of salad, bacon, cheese, and
+                      meat, in <strong>any screen size</strong>.
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    className={`${classes.cardContent} ${classes.cardBlack}`}
+                  >
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/gustavdias/rchat"
+                      startIcon={<CodeIcon />}
+                    >
+                      CODE
+                    </Button>
 
-                  <Button
-                    color="secondary"
-                    variant="contained"
-                    className={classes.button}
+                    <Button
+                      color="secondary"
+                      variant="contained"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://rchat-app.netlify.app/"
+                      startIcon={<VisibilityIcon />}
+                    >
+                      DEMO
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              {/* Card 2 AI Yellow */}
+              <Grid item key={0} xs={12} sm={6} md={6}>
+                <Card className={classes.cardWhite}>
+                  <CardActionArea
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://intelligent-news.netlify.app/"
-                    startIcon={<VisibilityIcon />}
                   >
-                    DEMO
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-{/* Card 3 ecommerce */}
-<Grid item key={0} xs={12} sm={6} md={6}>
-              <Card className={classes.card}>
-                <CardActionArea
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://amazonias.herokuapp.com/"
-                >
+                    <CardContent
+                      className={`${classes.cardContent} ${classes.cardYellow}`}
+                    >
+                      <Typography
+                        color="inherit"
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                      >
+                        Intelligent News App - The News provided and read by AI
+                      </Typography>
+                      <MainCard card="card1" divided="1.35" />
+                    </CardContent>
+                  </CardActionArea>
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
-                    <Typography
-                      color="inherit"
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                    >
-                      Amazonas App - eCommerce Store
+                    <Typography gutterBottom variant="h6" component="h2">
+                      React {bull} Alan API {bull} News API {bull} Material-UI{" "}
+                      {bull} React-Spring {bull} Material-UI
                     </Typography>
-                    <MainCard card="card3" divided="4" />
+                    <Typography>
+                      Let the AI do all the work. It will find and read for you
+                      the latest news, by categories, terms, and sources..
+                    </Typography>
                   </CardContent>
-                </CardActionArea>
-                <CardContent
-                  className={`${classes.cardContent} ${classes.cardYellow}`}
-                >
-                  <Typography gutterBottom variant="h6" component="h2">
-                    React {bull} Redux {bull} Node.js {bull} Express {bull} MongoDB {bull}{" "}
-                    React-Spring {bull} Material-UI
-                  </Typography>
-                  <Typography>
-                  Fully featured Amazon-like eCommerce MERN (+ Redux) stack app - (MongoDB, Express, React, Node, and Redux).  User authentication and authorization for customers and administrators. An admin side to manage products and orders. Paypal and card payment integration. All that is needed for a modern eCommerce business to be successful.
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  className={`${classes.cardContent} ${classes.cardBlack}`}
-                >
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.button}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/gustavdias/amazonias"
-                    startIcon={<CodeIcon />}
+                  <CardActions
+                    className={`${classes.cardContent} ${classes.cardBlack}`}
                   >
-                    CODE
-                  </Button>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/gustavdias/ai-news"
+                      startIcon={<CodeIcon />}
+                    >
+                      CODE
+                    </Button>
 
-                  <Button
-                    color="secondary"
-                    variant="contained"
-                    className={classes.button}
+                    <Button
+                      color="secondary"
+                      variant="contained"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://intelligent-news.netlify.app/"
+                      startIcon={<VisibilityIcon />}
+                    >
+                      DEMO
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              {/* Card 3 ecommerce */}
+              <Grid item key={0} xs={12} sm={6} md={6}>
+                <Card className={classes.card}>
+                  <CardActionArea
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://amazonias.herokuapp.com/"
-                    startIcon={<VisibilityIcon />}
                   >
-                    DEMO
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
+                    <CardContent
+                      className={`${classes.cardContent} ${classes.cardYellow}`}
+                    >
+                      <Typography
+                        color="inherit"
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                      >
+                        Amazonas App - eCommerce Store
+                      </Typography>
+                      <MainCard card="card3" divided="4" />
+                    </CardContent>
+                  </CardActionArea>
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
+                  >
+                    <Typography gutterBottom variant="h6" component="h2">
+                      React {bull} Redux {bull} Node.js {bull} Express {bull}{" "}
+                      MongoDB {bull} React-Spring {bull} Material-UI
+                    </Typography>
+                    <Typography>
+                      Fully featured Amazon-like eCommerce MERN (+ Redux) stack
+                      app - (MongoDB, Express, React, Node, and Redux). User
+                      authentication and authorization for customers and
+                      administrators. An admin side to manage products and
+                      orders. Paypal and card payment integration. All that is
+                      needed for a modern eCommerce business to be successful.
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    className={`${classes.cardContent} ${classes.cardBlack}`}
+                  >
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/gustavdias/amazonias"
+                      startIcon={<CodeIcon />}
+                    >
+                      CODE
+                    </Button>
 
+                    <Button
+                      color="secondary"
+                      variant="contained"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://amazonias.herokuapp.com/"
+                      startIcon={<VisibilityIcon />}
+                    >
+                      DEMO
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
 
-            {/* Card 2 Blue */}
-            {/* <Grid item key={2} xs={12} sm={6} md={6}>
+              {/* Card 2 Blue */}
+              {/* <Grid item key={2} xs={12} sm={6} md={6}>
               <Card className={classes.card}>
                 <CardActionArea
                   target="_blank"
@@ -365,11 +408,9 @@ export default function MainProjects() {
                 </CardActions>
               </Card>
             </Grid> */}
-          
-          </Grid>
+            </Grid>
           </Zoom>
         </Container>
-        
       </main>
     </React.Fragment>
   );

@@ -253,7 +253,7 @@ const NavBar = (props) => {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <Button
+            {/* <Button
               className={classes.buttonR}
               component={Link}
               to="/"
@@ -261,8 +261,8 @@ const NavBar = (props) => {
               color="secondary"
             >
               HOME
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               className={classes.buttonL}
               component={Link}
               to="/contact"
@@ -270,7 +270,7 @@ const NavBar = (props) => {
               color="secondary"
             >
               CONTACT
-            </Button>
+            </Button> */}
           </div>
           {/* This part is for what you want to see only on desktop view */}
           <div className={classes.sectionDesktop}>

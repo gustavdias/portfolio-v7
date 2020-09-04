@@ -82,14 +82,14 @@ const CallToAction = () => {
                 </Button>
               </Grid>
               <Grid item>
-                <Button
+                {/* <Button
                   variant="contained"
                   component={Link}
                   to="/contact"
                   color="secondary"
                 >
                   Contact Me
-                </Button>
+                </Button> */}
               </Grid>
             </Grid>
           </div>
