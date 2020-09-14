@@ -76,7 +76,7 @@ const CallToAction = () => {
                   color="primary"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
+                  href="https://docs.google.com/document/d/1bKkvI52SZwCAC0fbHJiXaeRzbSALa5adVyqVTa_USZA/edit"
                 >
                   Open resume
                 </Button>
