@@ -270,13 +270,13 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      MERN Todo List
+                      React Todo List
                     </Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h6" component="h2">
-                    MongoDB {bull} Express {bull} React {bull} Node.js
+                  React {bull} JSON {bull} REST API {bull} Axios 
                   </Typography>
                   <Typography>
                     A React Todo List with JSONPlaceholder Fake online REST that
