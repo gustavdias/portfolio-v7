@@ -123,6 +123,64 @@ export default function Album() {
             {/* {cards.map((card) => ( */}
             {/* Place your cards */}
 
+             {/* Card 0 Yellow */}
+             <Grid item key={0} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardActionArea
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://rm-graphqp.netlify.app/"
+                >
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardBlue}`}
+                  >
+                    <Typography
+                      color="inherit"
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      GraphQL API with Authorization
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} GraphQL API {bull} Apollo {bull} Material UI
+                  </Typography>
+                  <Typography>
+                    A React <strong>GraphQL</strong> Rick & Morty API {" "}
+                    with Apollo, Material UI and user authentication.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/gustavdias/task-graphql-map-api-react-mui"
+                    startIcon={<CodeIcon />}
+                  >
+                    CODE
+                  </Button>
+
+                  <Button
+                    color="secondary"
+                    variant="contained"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://rm-graphqp.netlify.app/"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    DEMO
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
             {/* Card 1 Yellow */}
             <Grid item key={0} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
