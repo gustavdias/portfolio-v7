@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Spring } from "react-spring/renderprops";
 import WaterWord from "../WaterWord/WaterWord";
 import EmojiPeopleSharpIcon from "@material-ui/icons/EmojiPeopleSharp";
@@ -61,7 +61,7 @@ const CallToAction = () => {
               >
                 & welcome{" "}
                 <EmojiPeopleSharpIcon fontSize="large" color="secondary" /> I am
-                a Full Stack Software Developer at your disposal. You can
+                a Frontend Software Developer at your disposal. You can
                 explore some of my projects below, and don&apos;t forget to
                 check my cv and contact me <SentimentVerySatisfiedSharpIcon />
               </Typography>

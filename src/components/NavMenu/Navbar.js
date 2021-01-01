@@ -17,8 +17,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import FileCopy from "@material-ui/icons/FileCopy";
 import Tooltip from "@material-ui/core/Tooltip";
-import Button from "@material-ui/core/Button";
-import { Link } from 'react-router-dom';
+// import Button from "@material-ui/core/Button";
+// import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -213,7 +213,7 @@ const NavBar = (props) => {
                 color="inherit"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
+                href="https://docs.google.com/document/d/1bKkvI52SZwCAC0fbHJiXaeRzbSALa5adVyqVTa_USZA/edit"
               >
                 <AssignmentInd />
               </IconButton>

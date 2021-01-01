@@ -9,20 +9,14 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
-import {
-  AssignmentInd,
-  Home,
-  ContactMail,
-} from "@material-ui/icons";
-import {Typography, Avatar} from "@material-ui/core";
+import { AssignmentInd, ContactMail } from "@material-ui/icons";
+import { Typography, Avatar } from "@material-ui/core";
 import FooterMobile from "../Footer/FooterMobile";
 import FileCopy from "@material-ui/icons/FileCopy";
-import { Link } from "react-router-dom";
-import avatar from '../../assets/images/android-chrome-512x512.png'
+// import { Link } from "react-router-dom";
+import avatar from "../../assets/images/android-chrome-512x512.png";
 // import Button from "@material-ui/core/Button";
 import Button from "@material-ui/core/Button";
-
-
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -32,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(13),
     height: theme.spacing(13),
   },
-  resumeButton:{
+  resumeButton: {
     color: "#19a9bc",
   },
   copyButton: {
@@ -93,8 +87,13 @@ export default function NavDrawer(props) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-
-<Avatar display="flex" justifyContent="center" src={avatar} className={classes.avatar} alt="Gustavo Dias" />
+      <Avatar
+        display="flex"
+        justifyContent="center"
+        src={avatar}
+        className={classes.avatar}
+        alt="Gustavo Dias"
+      />
       <List>
         <ListItem>
           <ListItemIcon>
@@ -109,7 +108,6 @@ export default function NavDrawer(props) {
           </ListItemIcon>
         </ListItem>
       </List>
-
 
       <List>
         {["COPY EMAIL"].map((text, index) => (
@@ -126,7 +124,7 @@ export default function NavDrawer(props) {
               )}
             </ListItemIcon>
             <ListItemText
-             className={classes.copyButton}
+              className={classes.copyButton}
               primary={text}
               onClick={() => {
                 navigator.clipboard.writeText(props.email.email);
@@ -135,12 +133,7 @@ export default function NavDrawer(props) {
           </ListItem>
         ))}
       </List>
-      <Divider/>
-
-     
-
-
-
+      <Divider />
 
       <Divider />
 
@@ -154,45 +147,43 @@ export default function NavDrawer(props) {
             variant="contained"
             color="primary"
           > */}
-<ListItem className={classes.copyButton}>
-<IconButton
-                color="inherit"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
-              >
-                <AssignmentInd />
-              </IconButton>
+        <ListItem className={classes.copyButton}>
+          <IconButton
+            color="inherit"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
+          >
+            <AssignmentInd />
+          </IconButton>
 
-
-            {/* <ListItemIcon className={classes.button}>
+          {/* <ListItemIcon className={classes.button}>
             </ListItemIcon> */}
 
-            {/* <ListItemText> */}
+          {/* <ListItemText> */}
 
-            <Button
-            display="flex" justifyContent="center"
-              className={classes.copyButton}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
-              // variant="outlined"
-              color="inherit"
-            >
-              Resume
-            </Button>
-            {/* <Typography style={{ color: "#19a9bc", fontFamily: "Montserrat" }}>
+          <Button
+            display="flex"
+            justifyContent="center"
+            className={classes.copyButton}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/11kDg6kOCOLxBYZUq6uK-8E2zeV5BXe1d/view?usp=sharing"
+            // variant="outlined"
+            color="inherit"
+          >
+            Resume
+          </Button>
+          {/* <Typography style={{ color: "#19a9bc", fontFamily: "Montserrat" }}>
 Resume
             </Typography> */}
 
-
-            {/* </ListItemText> */}
+          {/* </ListItemText> */}
 
           {/* </ListItem> */}
-        {/* ))} */}
+          {/* ))} */}
         </ListItem>
       </List>
-
 
       {/* <List>
         {["Resume"].map((text, index) => (
@@ -213,7 +204,6 @@ Resume
         ))}
       </List> */}
 
-  
       <Divider />
     </div>
   );
@@ -229,7 +219,7 @@ Resume
             aria-label="open drawer"
             onClick={toggleDrawer(anchor, true)}
           >
-            <MenuIcon style={{ fontSize: 40 }}/>
+            <MenuIcon style={{ fontSize: 40 }} />
           </IconButton>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           <SwipeableDrawer
