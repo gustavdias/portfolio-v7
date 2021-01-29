@@ -135,6 +135,75 @@ export default function MainProjects() {
                 </Typography>
               </Grid>
 
+
+
+               {/* Card 0 chat */}
+               <Grid item key={0} xs={12} sm={6} md={6}>
+                <Card className={classes.card}>
+                  <CardActionArea
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://youburger.netlify.app/"
+                  >
+                    <CardContent
+                      className={`${classes.cardContent} ${classes.cardYellow}`}
+                    >
+                      <Typography
+                        color="inherit"
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                      >
+                        rChat App - PWA Realtime Chat
+                      </Typography>
+                      <MainCard card="card2" divided="4" />
+                    </CardContent>
+                  </CardActionArea>
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
+                  >
+                    <Typography gutterBottom variant="h6" component="h2">
+                      React {bull} Node.js {bull} Express {bull} Socket.IO{" "}
+                      {bull} React-Spring {bull} Material-UI
+                    </Typography>
+                    <Typography>
+                      A <strong>React</strong> Burger Builder App with{" "}
+                      <strong>database</strong> and <strong>deployment</strong>{" "}
+                      on <strong>Firebase</strong>. You can build your own
+                      burger, with many pieces of salad, bacon, cheese, and
+                      meat, in <strong>any screen size</strong>.
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    className={`${classes.cardContent} ${classes.cardBlack}`}
+                  >
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/gustavdias/burger"
+                      startIcon={<CodeIcon />}
+                    >
+                      CODE
+                    </Button>
+
+                    <Button
+                      color="secondary"
+                      variant="contained"
+                      className={classes.button}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://youburger.netlify.app/"
+                      startIcon={<VisibilityIcon />}
+                    >
+                      DEMO
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
               {/* Card 1 chat */}
               <Grid item key={0} xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
@@ -202,7 +271,7 @@ export default function MainProjects() {
                 </Card>
               </Grid>
 
-              {/* Card 2 AI Yellow */}
+              {/* Card 2 AI Blue */}
               <Grid item key={0} xs={12} sm={6} md={6}>
                 <Card className={classes.cardWhite}>
                   <CardActionArea
@@ -211,7 +280,7 @@ export default function MainProjects() {
                     href="https://intelligent-news.netlify.app/"
                   >
                     <CardContent
-                      className={`${classes.cardContent} ${classes.cardYellow}`}
+                      className={`${classes.cardContent} ${classes.cardBlue}`}
                     >
                       <Typography
                         color="inherit"
@@ -225,7 +294,7 @@ export default function MainProjects() {
                     </CardContent>
                   </CardActionArea>
                   <CardContent
-                    className={`${classes.cardContent} ${classes.cardYellow}`}
+                    className={`${classes.cardContent} ${classes.cardBlue}`}
                   >
                     <Typography gutterBottom variant="h6" component="h2">
                       React {bull} Alan API {bull} News API {bull} Material-UI{" "}
