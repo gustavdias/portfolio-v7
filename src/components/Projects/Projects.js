@@ -123,7 +123,7 @@ export default function Album() {
             {/* {cards.map((card) => ( */}
             {/* Place your cards */}
 
-             {/* Card 0 Yellow */}
+             {/* Card 0 Blue */}
              <Grid item key={0} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardActionArea
@@ -182,7 +182,7 @@ export default function Album() {
             </Grid>
 
             {/* Card 1 Yellow */}
-            <Grid item key={0} xs={12} sm={6} md={4}>
+            {/* <Grid item key={0} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardActionArea
                   target="_blank"
@@ -241,9 +241,9 @@ export default function Album() {
                   </Button>
                 </CardActions>
               </Card>
-            </Grid>
+            </Grid> */}
 
-            {/* Card 2 Blue */}
+            {/* Card 2 Yellow */}
             <Grid item key={2} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardActionArea
@@ -252,7 +252,7 @@ export default function Album() {
                   href="https://extracker.netlify.app/"
                 >
                   <CardContent
-                    className={`${classes.cardContent} ${classes.cardBlue}`}
+                    className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
                     <Typography
                       color="inherit"

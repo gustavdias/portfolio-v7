@@ -1,3 +1,18 @@
+
+.card0 {
+  height: 20vmax;
+  width: 35vmax;
+  background: #36393f;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-image: url(../../assets/images/char_broiled-cheeseburger.svg);
+  background-size: cover;
+  background-position: center center;
+  transition: box-shadow 0.5s;
+  will-change: transform;
+}
+
+
 .card1 {
   height: 20vmax;
   width: 35vmax;

@@ -14,15 +14,13 @@ import MainCard from "../3dCard/3dCard";
 import WordTransition from "../WordTransition/WordTransition";
 import Typed from "react-typed";
 
-
 //card buttons style
 
 const useStyles = makeStyles((theme) => ({
-
-  portBox:{
-alignSelf: "center",
-color: "#0f0a10",
-// fontWeight: "bold"
+  portBox: {
+    alignSelf: "center",
+    color: "#0f0a10",
+    // fontWeight: "bold"
   },
   bullet: {
     display: "inline-block",
@@ -111,7 +109,6 @@ export default function MainProjects() {
               <Grid
                 // style={{ textAlign: "left" }}
                 className={classes.portBox}
-
                 item
                 key={0}
                 xs={12}
@@ -119,26 +116,23 @@ export default function MainProjects() {
                 md={6}
               >
                 <Typography
-                // className={classes.portfolio}
+                  // className={classes.portfolio}
                   gutterBottom
                   variant="h3"
                   component="h2"
                   color="textSecondary"
                 >
-                   <Typed
-                strings={["check my PORTFOLIO main projects..."]}
-                startDelay={10000}
-                showCursor={false}
-                typeSpeed={80}
-              />
-
+                  <Typed
+                    strings={["check my PORTFOLIO main projects..."]}
+                    startDelay={10000}
+                    showCursor={false}
+                    typeSpeed={80}
+                  />
                 </Typography>
               </Grid>
 
-
-
-               {/* Card 0 chat */}
-               <Grid item key={0} xs={12} sm={6} md={6}>
+              {/* Card 0 chat */}
+              <Grid item key={0} xs={12} sm={6} md={6}>
                 <Card className={classes.card}>
                   <CardActionArea
                     target="_blank"
@@ -154,24 +148,26 @@ export default function MainProjects() {
                         variant="h5"
                         component="h2"
                       >
-                        rChat App - PWA Realtime Chat
+                        YouBurger App - Builder your own delicious burger
                       </Typography>
-                      <MainCard card="card2" divided="4" />
+                      <MainCard card="card0" divided="4" />
                     </CardContent>
                   </CardActionArea>
                   <CardContent
                     className={`${classes.cardContent} ${classes.cardYellow}`}
                   >
                     <Typography gutterBottom variant="h6" component="h2">
-                      React {bull} Node.js {bull} Express {bull} Socket.IO{" "}
-                      {bull} React-Spring {bull} Material-UI
+                      React {bull} Redux {bull} FireBase {bull} Material-UI
                     </Typography>
                     <Typography>
-                      A <strong>React</strong> Burger Builder App with{" "}
-                      <strong>database</strong> and <strong>deployment</strong>{" "}
-                      on <strong>Firebase</strong>. You can build your own
-                      burger, with many pieces of salad, bacon, cheese, and
-                      meat, in <strong>any screen size</strong>.
+                      "YouBurger App" developed with{" "}
+                      <strong>
+                        React, FireBase database, Redux, Form Validation and
+                        User Authentication
+                      </strong>
+                      . Make your own burger, with many pieces of salad, bacon,
+                      cheese, and personalized burger in 
+                      <strong> any screen size</strong>.
                     </Typography>
                   </CardContent>
                   <CardActions
@@ -223,7 +219,7 @@ export default function MainProjects() {
                       >
                         rChat App - PWA Realtime Chat
                       </Typography>
-                      <MainCard card="card2" divided="4" />
+                      <MainCard card="card2" divided="1.35" />
                     </CardContent>
                   </CardActionArea>
                   <CardContent
@@ -234,11 +230,7 @@ export default function MainProjects() {
                       {bull} React-Spring {bull} Material-UI
                     </Typography>
                     <Typography>
-                      A <strong>React</strong> Burger Builder App with{" "}
-                      <strong>database</strong> and <strong>deployment</strong>{" "}
-                      on <strong>Firebase</strong>. You can build your own
-                      burger, with many pieces of salad, bacon, cheese, and
-                      meat, in <strong>any screen size</strong>.
+                      A <strong>real time chat </strong>app with Node.js and Socket.IO. Open the project in two different tabs, logging into the same chat room, and start talking with your friends!
                     </Typography>
                   </CardContent>
                   <CardActions
@@ -290,7 +282,7 @@ export default function MainProjects() {
                       >
                         Intelligent News App - The News provided and read by AI
                       </Typography>
-                      <MainCard card="card1" divided="1.35" />
+                      <MainCard card="card1" divided="4" />
                     </CardContent>
                   </CardActionArea>
                   <CardContent
@@ -354,7 +346,7 @@ export default function MainProjects() {
                       >
                         Amazonas App - eCommerce Store
                       </Typography>
-                      <MainCard card="card3" divided="4" />
+                      <MainCard card="card3" divided="1.35" />
                     </CardContent>
                   </CardActionArea>
                   <CardContent

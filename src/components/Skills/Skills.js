@@ -71,6 +71,7 @@ const tiers = [
     description: [
       "React.js",
       "Redux.js",
+      "Next.js",
       "Gatsby",
       "Material UI",
       "react-spring",
@@ -91,6 +92,7 @@ const tiers = [
       "socket.io",
       "Ajax",
       "REST",
+      "GraphQL"
     ],
     // buttonText: 'Contact us',
     // buttonVariant: 'outlined',
@@ -99,12 +101,10 @@ const tiers = [
     title: "Others",
     // price: '30',
     description: [
-      "Version Control",
+      "Version Control - Git & Github",
       "Deployment",
       "OOP",
-      "Web Security",
       "Linux",
-      "Arch Linux",
       "Conversion Rate Optimization",
       "SEO",
       "CMS",
