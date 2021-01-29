@@ -13,6 +13,8 @@ import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import NavDrawer from "./NavDrawer";
 import Typed from "react-typed";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 import GitHubIcon from "@material-ui/icons/GitHub";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import FileCopy from "@material-ui/icons/FileCopy";
@@ -20,10 +22,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 // import Button from "@material-ui/core/Button";
 // import { Link } from 'react-router-dom';
 
-
 const useStyles = makeStyles((theme) => ({
-
-
   buttonR: {
     marginRight: theme.spacing(1),
   },
@@ -32,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
   },
   grow: {
     flexGrow: 1,
-    
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -100,7 +98,6 @@ const NavBar = (props) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -190,7 +187,6 @@ const NavBar = (props) => {
             <NavDrawer email={props} />
           </div>
 
-
           {/* --------------------------------- Gustavo Dias --------------------------------- */}
           <Typography
             variant="h5"
@@ -205,8 +201,6 @@ const NavBar = (props) => {
 
           {/* --------------------------------- Search Bars --------------------------------- */}
           <div className={classes.sectionDesktop}>
-
-
             {/* Resume */}
             <Tooltip title="Open Resume">
               <IconButton
@@ -218,13 +212,10 @@ const NavBar = (props) => {
                 <AssignmentInd />
               </IconButton>
             </Tooltip>
-            
           </div>
 
           {/* This part is for what you want to see only on desktop view */}
           <div className={classes.sectionDesktop}>
-            
-
             {/* email */}
             <Tooltip title="Copy email">
               <IconButton
@@ -274,25 +265,30 @@ const NavBar = (props) => {
           </div>
           {/* This part is for what you want to see only on desktop view */}
           <div className={classes.sectionDesktop}>
-            
-<Tooltip title="Visit my GitHub">
-
-            <IconButton
-            
-              aria-label="show 17 new notifications"
-              color="inherit"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/gustavdias"
-            >
-
+            <Tooltip title="Visit my GitHub">
+              <IconButton
+                aria-label="show 17 new notifications"
+                color="inherit"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/gustavdias"
+              >
                 <GitHubIcon color="inherit" />
-            </IconButton>
+              </IconButton>
             </Tooltip>
 
+            <Tooltip title="Check my LinkedIn">
+              <IconButton
+                aria-label="show 17 new notifications"
+                color="inherit"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/gustavoalmd/"
+              >
+                <LinkedInIcon color="inherit" />
+              </IconButton>
+            </Tooltip>
           </div>
-
-         
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
