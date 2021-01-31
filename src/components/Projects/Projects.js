@@ -140,7 +140,7 @@ export default function Album() {
                       variant="h5"
                       component="h2"
                     >
-                      Form validation and Table with filtering and sorting
+                      Form validation, and Table with filtering and sorting
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -149,7 +149,8 @@ export default function Album() {
                     React {bull} Material UI
                   </Typography>
                   <Typography>
-                    Form with validation and table with sorting and filtering{" "}
+                    React app with form validation and a table with sorting and
+                    filtering.
                   </Typography>
                 </CardContent>
                 <CardActions>
