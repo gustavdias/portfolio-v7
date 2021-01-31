@@ -149,8 +149,7 @@ export default function Album() {
                     React {bull} Material UI
                   </Typography>
                   <Typography>
-                    A React <strong>GraphQL</strong> Rick & Morty API Input form
-                    with validation and table with sorting and filtering{" "}
+                    Form with validation and table with sorting and filtering{" "}
                   </Typography>
                 </CardContent>
                 <CardActions>
