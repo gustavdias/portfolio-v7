@@ -15,7 +15,7 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 
 const useStyles = makeStyles((theme) => ({
   yWord: {
-color: '#dbb700',
+    color: "#dbb700",
   },
   bullet: {
     display: "inline-block",
@@ -95,7 +95,7 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              Portfolio 
+              Portfolio
             </Typography>
             <Typography
               component="h2"
@@ -104,7 +104,7 @@ export default function Album() {
               gutterBottom
               className={classes.yWord}
             >
-<span>+ </span> more projects <span>+</span>
+              <span>+ </span> more projects <span>+</span>
             </Typography>
             {/* <Typography
           variant="h5"
@@ -123,8 +123,66 @@ export default function Album() {
             {/* {cards.map((card) => ( */}
             {/* Place your cards */}
 
-             {/* Card 0 Blue */}
-             <Grid item key={0} xs={12} sm={6} md={4}>
+            {/* Card -1 White */}
+            <Grid item key={0} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardActionArea
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://rm-graphqp.netlify.app/"
+                >
+                  <CardContent
+                    className={`${classes.cardContent} ${classes.cardWhite}`}
+                  >
+                    <Typography
+                      color="inherit"
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      Form validation and Table with filtering and sorting
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    React {bull} Material UI
+                  </Typography>
+                  <Typography>
+                    A React <strong>GraphQL</strong> Rick & Morty API Input form
+                    with validation and table with sorting and filtering{" "}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/gustavdias/form-table-react-mui-v3-ru"
+                    startIcon={<CodeIcon />}
+                  >
+                    CODE
+                  </Button>
+
+                  <Button
+                    color="secondary"
+                    variant="contained"
+                    className={classes.button}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://form-table-react-mui.netlify.app/"
+                    startIcon={<VisibilityIcon />}
+                  >
+                    DEMO
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            {/* Card 0 Blue */}
+            <Grid item key={0} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardActionArea
                   target="_blank"
@@ -149,8 +207,8 @@ export default function Album() {
                     React {bull} GraphQL API {bull} Apollo {bull} Material UI
                   </Typography>
                   <Typography>
-                    A React <strong>GraphQL</strong> Rick & Morty API {" "}
-                    with Apollo, Material UI and user authentication.
+                    A React <strong>GraphQL</strong> Rick & Morty API with
+                    Apollo, Material UI and user authentication.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -334,7 +392,7 @@ export default function Album() {
                 </CardActionArea>
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h6" component="h2">
-                  React {bull} JSON {bull} REST API {bull} Axios 
+                    React {bull} JSON {bull} REST API {bull} Axios
                   </Typography>
                   <Typography>
                     A React Todo List with JSONPlaceholder Fake online REST that
